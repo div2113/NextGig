@@ -81,7 +81,7 @@ class JobListing(models.Model):
             ]
             self.location = " / ".join(cleaned_locations)
 
-        if self.application_deadline and self.application_deadline < now():
+        if self.application_deadline and self.application_deadline < now().date():
             raise ValidationError("The application deadline cannot be in the past.")
 
         if self.salary_range:

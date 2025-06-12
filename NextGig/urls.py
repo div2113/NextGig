@@ -38,7 +38,7 @@ urlpatterns = [
     path("jobApplications/", include("jobApplication.urls")),
     path("jobListings/", include("jobListing.urls")),
     path("jobSeekerProfiles/", include("jobSeekerProfile.urls")),
-    # path("notifications/",include("notification.urls")),
+    path("notifications/",include("notification.urls")),
     path("savedJobs/",include("savedJob.urls")),
     path("api/token/", TokenObtainPairView.as_view()),
     path("api/token/refresh/", TokenRefreshView.as_view()),

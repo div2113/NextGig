@@ -32,7 +32,7 @@ INSTALLED_APPS = [
     "user.apps.UserConfig",
     "jobSeekerProfile",
     "employerProfile",
-    "notification",
+    "notification.apps.NotificationConfig",
     "jobListing",
     "jobApplication",
     "savedJob",
